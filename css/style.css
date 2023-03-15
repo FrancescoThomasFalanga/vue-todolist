@@ -32,11 +32,15 @@ h1 {
     justify-content: center;
 }
 
+ul {
+    margin-left: 25px;
+    line-height: 25px;
+}
 
-
-
-
-
+.lined {
+    text-decoration: line-through;
+    text-decoration-color: #e00000;
+}
 
 
 

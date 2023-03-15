@@ -6,28 +6,28 @@ createApp({
       
         todos: [
             {
-                text: "",
+                text: "Subnautica",
                 done: true,
             },
             {
-                text: "",
+                text: "Sekiro: Shadow Die Twice",
                 done: true,
             },
             {
-                text: "",
+                text: "Wo-Long: Dinasty Fallen",
+                done: false,
+            },
+            {
+                text: "ELDEN RING",
                 done: true,
             },
             {
-                text: "",
+                text: "Hogwarts Legacy",
                 done: true,
             },
             {
-                text: "",
-                done: true,
-            },
-            {
-                text: "",
-                done: true,
+                text: "Dying Light 2",
+                done: false,
             },
         ],
 
