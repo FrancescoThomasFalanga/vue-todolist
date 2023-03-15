@@ -38,7 +38,7 @@
                     
                     <ul>
                         <li v-for="(todo, index) in todos">
-                            <span @click="deleteTodo(index)" class="remove-from-list"><i class="fa-solid fa-xmark"></i></span> <span :class="todo.done ? 'lined' : '' ">{{todo.text}}</span>
+                            <span @click="deleteTodo(index)" class="remove-from-list"><i class="fa-solid fa-xmark"></i></span> <span @click="doneProperty(todo)" :class="todo.done ? 'lined' : '' ">{{todo.text}}</span>
                         </li>
                     </ul>
     
@@ -50,14 +50,14 @@
             <div class="flex">
                 <!-- INPUT -->
                 <div class="inputbox">
-                    <input required="required" type="text">
+                    <input required="required" type="text" v-model="newTodo.text" @keyup.enter="addTodo()">
                     <span>Da giocare</span>
                     <i></i>
                 </div>
                 <!-- /INPUT -->
     
                 <!-- BUTTON -->
-                <button>
+                <button @click="addTodo">
                     <span class="transition"></span>
                     <span class="gradient"></span>
                     <span class="label">Aggiungi</span>

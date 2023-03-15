@@ -30,6 +30,11 @@ createApp({
                 done: false,
             },
         ],
+
+        newTodo: {
+            text: "",
+            done: false,
+        },
     }
   },
 
@@ -38,6 +43,31 @@ createApp({
 
         // elimina l'elemento dall'array all'indice che ti do io
         this.todos.splice(todoIndex, 1);
+
+    },
+
+    addTodo() {
+
+        if(this.newTodo.text == "" || this.newTodo.text == null) {
+
+            console.log("Errore");
+
+        } else {
+
+            this.todos.push(this.newTodo);
+            this.newTodo = {text: "", done: false};
+
+        }
+
+    },
+
+    doneProperty(checkUncheck) {
+
+        if (checkUncheck.done == true) {
+            checkUncheck.done = false;
+        } else {
+            checkUncheck.done = true;
+        };
 
     },
 },
