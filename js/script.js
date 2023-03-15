@@ -30,7 +30,15 @@ createApp({
                 done: false,
             },
         ],
-
     }
-  }
+  },
+
+  methods: {
+    deleteTodo(todoIndex) {
+
+        // elimina l'elemento dall'array all'indice che ti do io
+        this.todos.splice(todoIndex, 1);
+
+    },
+},
 }).mount('#app')

@@ -33,8 +33,8 @@ h1 {
 }
 
 ul {
-    margin-left: 25px;
     line-height: 25px;
+    list-style-type: none;
 }
 
 .lined {
@@ -42,10 +42,13 @@ ul {
     text-decoration-color: #e00000;
 }
 
+.remove-from-list {
+    margin: 0 10px;
+}
 
-
-
-
+span {
+    font-weight: bold;
+}
 
 
 
